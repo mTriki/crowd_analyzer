@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'crowd_analyzer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'molia_crowdanalyzer',
+        'NAME': 'crowdanalyzer_db',
         'USER': 'molia',
         'PASSWORD': '8Molia(',
         'HOST': 'mysql.alwaysdata.com',
@@ -86,5 +86,5 @@ APPEND_SLASH = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = '/home/molia/crowd_analyzer/public/static/'
-STATIC_URL = '/static/' if DEBUG else 'http://molia.alwaysdata.net/static/'
+STATIC_ROOT = '/home/crowdanalyzer/crowd_analyzer/public/static/'
+STATIC_URL = '/static/' if DEBUG else 'http://crowdanalyzer.alwaysdata.net/static/'
